@@ -94,7 +94,6 @@ public class Csv {
         }
     }
 
-
     public static void removeRegistro(String caminhoArq, String nome) {
         List<String[]> temp = Csv.lerComOpenCsv(caminhoArq);
         System.out.println("Deseja deletar o filme: " + nome + "?");
@@ -102,8 +101,10 @@ public class Csv {
         String escolha = entrada.nextLine();
 
         if (escolha.equalsIgnoreCase("s")) {
-            temp.removeIf(dado -> dado.length > 1 && dado[1].equalsIgnoreCase(nome));
 
+            boolean encontrado = temp.removeIf(dado -> dado.length > 1 && dado[1].equalsIgnoreCase(nome));
+
+            if(encontrado){
             try (CSVWriter writer = new CSVWriter(new FileWriter(caminhoArq))) {
                 writer.writeAll(temp);
                 System.out.println("Filme deletado com sucesso!");
@@ -111,8 +112,10 @@ public class Csv {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else {
-            System.out.println("Filme não deletado!");
+            }else {
+                System.out.println("Filme não existe no nosso acervo!");
+
+        }
         }
     }
 
