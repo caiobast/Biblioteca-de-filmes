@@ -1,0 +1,51 @@
+Boa, Caio! 🔥 Vamos turbinar esse roadmap adicionando **funcionalidades criativas, mas ainda simples de implementar**. Vou organizar como uma lista de features que você pode ir marcando à medida que for implementando.
+
+---
+
+# ✅ Funcionalidades do Projeto de Filmes
+
+### 🎬 Básico (já tem ou já pensou)
+
+* [ ] Loop do menu (`do-while`).
+* [ ] Classe `Filme` para organizar os dados.
+* [ ] Ler filmes do CSV para uma lista (`List<Filme>`).
+* [ ] Listar todos os filmes (pular cabeçalho).
+* [ ] Ver detalhes de um filme pelo **ID**.
+* [ ] Adicionar novo filme.
+* [ ] Editar filme existente.
+* [ ] Remover filme.
+
+---
+
+### 🔍 Melhorias úteis
+
+* [ ] **Verificar se filme já existe** → antes de adicionar, checar se já existe um com o mesmo título (evita duplicado).
+* [ ] **Gerar ID automático** → ao adicionar, o sistema pega o maior `id` existente + 1. (assim o usuário não precisa digitar ID).
+* [ ] **Salvar automaticamente no CSV** depois de qualquer alteração.
+* [ ] **Confirmação em exclusão/edição** → “Você tem certeza? (s/n)”.
+
+---
+
+### 🌟 Funcionalidades criativas
+
+* [ ] **Filme aleatório** → recomendar 1 filme aleatório (boa pra brincar com `Random`).
+* [ ] **Buscar por título** → listar todos que contenham uma palavra no nome.
+* [ ] **Filtrar por gênero** → exibir apenas filmes de “Ação”, “Comédia”, etc.
+* [ ] **Filtrar por intervalo de anos** → ex.: mostrar filmes lançados entre 2000 e 2010.
+* [ ] **Ordenar lista** (por título, ano ou gênero).
+* [ ] **Sinopse resumida** → mostrar só os primeiros 100 caracteres + opção “ver mais”.
+
+---
+
+### 💡 Ideias extras (se quiser ir além depois)
+
+* [ ] **Favoritos** → o usuário pode marcar filmes como favoritos e ter uma lista separada.
+* [ ] **Histórico de recomendações** → armazenar quais filmes aleatórios já foram exibidos.
+* [ ] **Top N filmes por gênero** → exibir os 3 primeiros de cada gênero.
+* [ ] **Exportar para outro formato** (TXT simples, por exemplo, além do CSV).
+
+---
+
+👉 Com isso, seu projetinho já não é só um CRUDzinho qualquer, mas começa a parecer um **mini sistema de catálogo de filmes** 🎥.
+
+Quer que eu monte um **fluxo de como ficaria o menu com todas essas opções organizadas** (tipo um protótipo do menu final com números de 0 a 9)?

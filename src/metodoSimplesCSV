@@ -1,0 +1,20 @@
+// Metodo criado para ler CSV de modo autônomo,sem precisar usar biblioteca externa.
+
+    public static List<String[]> lendoCsv(String caminhoArq){
+        List<String[]> dados = new ArrayList<>();
+
+        try {
+            List<String> linhaCsv = Files.readAllLines(Paths.get(caminhoArq));
+
+            for (String linha : linhaCsv) {
+                String[] temp = linha.split(",");
+                dados.add(temp);
+            }
+        }
+        catch(IOException e){
+            System.out.println("Erro ao ler arquivo" + e.getMessage());
+        }
+
+        return dados;
+    }
+}
