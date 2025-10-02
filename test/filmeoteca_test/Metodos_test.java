@@ -1,8 +1,9 @@
+package test.filmeoteca_test;
+
 import java.util.List;
-import java.util.Random;
 import java.util.Scanner;
 
-public class Metodos { //metodos apartados para serem usados a parte e manter a organização
+public class Metodos_test { //metodos apartados para serem usados a parte e manter a organização
 
     public static void exibirFilmes (String caminhoArq){
        List<String []> filmes = Csv.lerComOpenCsv(caminhoArq);

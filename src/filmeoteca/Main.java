@@ -1,3 +1,5 @@
+package filmeoteca;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -11,11 +13,13 @@ public class Main {
         do {
 
         System.out.println("\n ==== Menu ====");
-        System.out.println("1: Se deseja ver todo nosso acervo de fimes");
+        System.out.println("1: Se deseja ver todo nosso acervo de filmes");
         System.out.println("2: Se deseja pesquisar mais informações sobre algum filme");
         System.out.println("3: Se deseja adicionar algum filme a nossa estante");
         System.out.println("4: Geração de id");
         System.out.println("5: Se deseja editar algum filme");
+        System.out.println("6: Se deseja deletar algum filme");
+        System.out.println("7: Se deseja editar algum id");
         System.out.println("0: Se deseja sair");
         System.out.print("Digite a opção selecionada: ");
         n = tec.nextInt();
@@ -31,10 +35,7 @@ public class Main {
                 break;
 
             case 2:
-                List<String[]> dados = Csv.lerComOpenCsv(caminho);
-                System.out.println("Qual filme você deseja ter mais informações: ");
-                String temp = tec.nextLine();
-                Csv.acharFilmeCsv(dados, temp);
+                Metodos.informacoesFilmes(caminho, tec);
                 break;
 
             case 3:
@@ -48,9 +49,19 @@ public class Main {
                 break;
 
             case 5:
-                System.out.println("Qual filme você deseja alterar? ");
+                Metodos.edicaoFilmes(caminho, tec);
+                break;
+
+            case 6:
+                System.out.println("Qual filme você deseja deletar? ");
+                String nomed = tec.nextLine();
+                Csv.removeRegistro(caminho, nomed);
+                break;
+
+            case 7:
+                System.out.println("Digite o nome do filme que alteraremos o id: ");
                 String nome = tec.nextLine();
-                Csv.editarCsv(caminho, nome);
+                Metodos.alteracaoID(caminho, nome);
                 break;
 
             default:
