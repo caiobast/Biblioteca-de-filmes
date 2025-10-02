@@ -1,3 +1,5 @@
+package test.filmeoteca_test;
+
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvException;
@@ -5,17 +7,12 @@ import com.opencsv.exceptions.CsvException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 
-public class Csv {
+public class Csv_test {
 
     public static List<String[]> lerComOpenCsv(String caminhoArq) {
         List<String[]> filmes = new ArrayList<>();
