@@ -6,13 +6,13 @@ Boa, Caio! 🔥 Vamos turbinar esse roadmap adicionando **funcionalidades criati
 
 ### 🎬 Básico (já tem ou já pensou)
 
-* [ ] Loop do menu (`do-while`).
+* [ ] Loop do menu (`do-while`). (MELHORAR)
 * [ ] Classe `Filme` para organizar os dados.
 * [ ] Ler filmes do CSV para uma lista (`List<Filme>`).
-* [ ] Listar todos os filmes (pular cabeçalho).
-* [ ] Ver detalhes de um filme pelo **ID**.
-* [ ] Adicionar novo filme.
-* [ ] Editar filme existente.
+* [x] Listar todos os filmes (pular cabeçalho).
+* [x] Ver detalhes de um filme pelo **ID**.
+* [x] Adicionar novo filme.
+* [x] Editar filme existente.
 * [ ] Remover filme.
 
 ---
@@ -20,9 +20,10 @@ Boa, Caio! 🔥 Vamos turbinar esse roadmap adicionando **funcionalidades criati
 ### 🔍 Melhorias úteis
 
 * [ ] **Verificar se filme já existe** → antes de adicionar, checar se já existe um com o mesmo título (evita duplicado).
-* [ ] **Gerar ID automático** → ao adicionar, o sistema pega o maior `id` existente + 1. (assim o usuário não precisa digitar ID).
-* [ ] **Salvar automaticamente no CSV** depois de qualquer alteração.
+* [x] **Gerar ID automático** → ao adicionar, o sistema pega o maior `id` existente + 1. (assim o usuário não precisa digitar ID).
+* [ ] **Salvar automaticamente no CSV** depois de qualquer alteração. (Metodo salvar apartado)
 * [ ] **Confirmação em exclusão/edição** → “Você tem certeza? (s/n)”.
+* [ ] ** Criar Readme.
 
 ---
 
@@ -43,6 +44,9 @@ Boa, Caio! 🔥 Vamos turbinar esse roadmap adicionando **funcionalidades criati
 * [ ] **Histórico de recomendações** → armazenar quais filmes aleatórios já foram exibidos.
 * [ ] **Top N filmes por gênero** → exibir os 3 primeiros de cada gênero.
 * [ ] **Exportar para outro formato** (TXT simples, por exemplo, além do CSV).
+* [ ] **Mudar para arquivo txt, e tentar acessar via nuvem.
+* [ ] **Adicionar Maven ao projeto.
+* [ ] **Adicionar Spring Boot ao projeto.
 
 ---
 
